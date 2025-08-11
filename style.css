@@ -1229,6 +1229,23 @@ body {
   line-height: var(--leading-relaxed);
   color: var(--color-slate-600);
 }
+#desktop-nav, #desktop-search {
+  display: none;
+}
+#mobile-icons {
+  display: flex;
+}
+@media (min-width: 1024px) {
+  #desktop-nav {
+    display: flex;
+  }
+  #desktop-search {
+    display: block;
+  }
+  #mobile-icons {
+    display: none;
+  }
+}
 #mobile-menu-fullscreen {
   opacity: 0;
   pointer-events: none;
